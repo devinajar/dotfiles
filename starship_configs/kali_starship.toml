@@ -1,0 +1,30 @@
+format = """\
+[╭──\\($username\\)-\\[$directory\\]](green) $git_branch $git_status
+[╰─[\\$ ](bold #769ff0)](green)
+"""
+
+[username]
+show_always = true
+style_user = "fg:#9A348E"
+style_root = "fg:#9A348E"
+format = '[$user]($style)'
+disabled = false
+
+[directory]
+style = "fg:#DA627D"
+format = "[$path]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+format = '[[on](white) $symbol $branch](fg:#769ff0)'
+
+[git_status]
+format = '[($all_status$ahead_behind)](fg:#769ff0)'
