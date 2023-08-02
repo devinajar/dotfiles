@@ -9,6 +9,7 @@ $git_status\
 [](fg:#8E6784 bg:#6E3C61)\
 $nodejs\
 $python\
+$terraform\
 $rust\
 $golang\
 $php\
@@ -47,6 +48,11 @@ format = '[[ $symbol ($version) ](fg:#F29879 bg:#6E3C61)]($style)'
 symbol = " "
 style = "bg:#6E3C61"
 format = '[[ $symbol ($version) ](fg:#F29879 bg:#6E3C61)]($style)'
+
+[terraform]
+symbol = "󱁢 "
+style = "bg:#6E3C61"
+format = '[[ $symbol$workspace ](fg:#F29879 bg:#6E3C61)]($style)'
 
 [rust]
 symbol = ""
