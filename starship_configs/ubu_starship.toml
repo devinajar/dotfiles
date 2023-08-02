@@ -45,12 +45,12 @@ format = '[[ $symbol ($version)](fg:#539e43 $style)]($style)'
 [python]
 symbol = " "
 style = "bg:#5E2750"
-format = '[[ $symbol ($version) ](fg:#F29879 bg:#5E2750)]($style)'
+format = '[[ $symbol[($version)](fg:#F29879 $style) ](fg:#3772a4 $style)]($style)'
 
 [terraform]
 symbol = "󱁢 "
 style = "bg:#5E2750"
-format = '[ $symbol[$workspace](fg:#F29879 $style) ]($style)'
+format = '[ $symbol[$workspace](fg:#F29879 $style) ](fg:#5e42e9 $style)'
 
 [rust]
 symbol = ""
