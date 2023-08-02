@@ -8,6 +8,7 @@ $git_branch\
 $git_status\
 [](fg:#8E6784 bg:#6E3C61)\
 $nodejs\
+$python\
 $rust\
 $golang\
 $php\
@@ -39,6 +40,11 @@ format = '[[($all_status$ahead_behind )](fg:#411934 bg:#8E6784)]($style)'
 
 [nodejs]
 symbol = ""
+style = "bg:#6E3C61"
+format = '[[ $symbol ($version) ](fg:#F29879 bg:#6E3C61)]($style)'
+
+[python]
+symbol = " "
 style = "bg:#6E3C61"
 format = '[[ $symbol ($version) ](fg:#F29879 bg:#6E3C61)]($style)'
 
