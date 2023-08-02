@@ -3,19 +3,17 @@ format = """
 [ ](bg:#77216F fg:#EB6536)\
 [](bg:#EB6536 fg:#77216F)\
 $directory\
-[](fg:#EB6536 bg:#8E6784)\
+[](fg:#EB6536 bg:#6E3C61)\
 $git_branch\
 $git_status\
-[](fg:#8E6784 bg:#6E3C61)\
+[](fg:#6E3C61 bg:#5E2750)\
 $nodejs\
 $python\
 $terraform\
 $rust\
 $golang\
 $php\
-[](fg:#6E3C61 bg:#5E2750)\
-$time\
-[ ](fg:#5E2750)\
+[](fg:#5E2750)\
 \n$character"""
 
 [directory]
@@ -32,45 +30,40 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:#8E6784"
-format = '[[ $symbol $branch ](fg:#411934 bg:#8E6784)]($style)'
+style = "bg:#6E3C61"
+format = '[[ $symbol $branch ](fg:#CECAC5 bg:#6E3C61)]($style)'
 
 [git_status]
-style = "bg:#8E6784"
-format = '[[($all_status$ahead_behind )](fg:#411934 bg:#8E6784)]($style)'
+style = "bg:#6E3C61"
+format = '[[($all_status$ahead_behind )](fg:#CECAC5 bg:#6E3C61)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#6E3C61"
-format = '[[ $symbol ($version) ](fg:#F29879 bg:#6E3C61)]($style)'
+style = "bg:#5E2750"
+format = '[[ $symbol ($version)](fg:#539e43 $style)]($style)'
 
 [python]
 symbol = " "
-style = "bg:#6E3C61"
-format = '[[ $symbol ($version) ](fg:#F29879 bg:#6E3C61)]($style)'
+style = "bg:#5E2750"
+format = '[[ $symbol ($version) ](fg:#F29879 bg:#5E2750)]($style)'
 
 [terraform]
 symbol = "󱁢 "
-style = "bg:#6E3C61"
-format = '[[ $symbol$workspace ](fg:#F29879 bg:#6E3C61)]($style)'
+style = "bg:#5E2750"
+format = '[ $symbol[$workspace](fg:#F29879 $style) ]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#6E3C61"
-format = '[[ $symbol ($version) ](fg:#F29879 bg:#6E3C61)]($style)'
+style = "bg:#5E2750"
+format = '[[ $symbol ($version) ](fg:#F29879 bg:#5E2750)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:#6E3C61"
-format = '[[ $symbol ($version) ](fg:#F29879 bg:#6E3C61)]($style)'
+style = "bg:#5E2750"
+format = '[[ $symbol ($version) ](fg:#F29879 bg:#5E2750)]($style)'
 
 [php]
 symbol = ""
-style = "bg:#6E3C61"
-format = '[[ $symbol ($version) ](fg:#F29879 bg:#6E3C61)]($style)'
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
 style = "bg:#5E2750"
-format = '[[  $time ](fg:#CECAC5 bg:#5E2750)]($style)'
+format = '[[ $symbol ($version) ](fg:#F29879 bg:#5E2750)]($style)'
+
