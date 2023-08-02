@@ -1,6 +1,7 @@
 format = """\
 [╭──\\($username$hostname\\)-\\[$directory\\] $git_branch $git_status](#0168ed) \
 $nodejs\
+$terraform\
 $golang
 [╰─[\\$ ](bold #18bea6)](#0168ed)
 """
@@ -24,13 +25,17 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-format = '[on](white) \[[ $symbol $branch](fg:#c37d28)'
+format = '\[[ $symbol $branch](fg:#c37d28)'
 
 [git_status]
 format = '[($all_status$ahead_behind)](fg:#c37d28)\]'
 
 [nodejs]
-format = '[via](white) [$symbol]($style)'
+format = '[$symbol]($style)'
 
 [golang]
-format = '[via](white) []($style)'
+format = '[]($style)'
+
+[terraform]
+symbol = "󱁢 "
+format = '[ $symbol[$workspace](white)](fg:#5e42e9)'
