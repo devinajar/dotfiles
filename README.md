@@ -13,7 +13,9 @@ starship_configs/
 
 └── ubu_starship.toml --> A prompt inspired by the Ubuntu color palette
 ```
-Once you have starship installed, copy `starship.toml` in your `~/.config directory`. To change between themes just copy the style you want into `starship.toml`. For example:
+Once you have starship installed, copy `starship.toml` in your `~/.config directory`. To change between themes just copy the style you want into `starship.toml`. 
+
+For example:
 ```
 cp ubu_starship ~/.config/starship.toml
 ```
